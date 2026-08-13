@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var pokemon = {
+            nome : "Squirtle",
+            numero_da_pokedex: 7,
+            tipo: "Água",
+            nivel: 5,
+            nivel_maximo: 100,
+            vida: 44,
+            energia: 0,
+            altura: "0,5 metros",
+            peso: 9,
+            forca: 48,
+            defesa: 65,
+            velocidade: 43,
+            habilidade: "Torrent",
+            ataques: "Investida, Chicote de Cauda, Jato d'Água e Proteção ",
+            fraqueza: "Elétrico e Planta",
+            evolucao: "Squirtle -> Wartortle -> Blastoise",
+
+
+
+            posicao: 0,
+            andar(){
+                alert("Squirtle andou")
+                this.posicao = this.posicao + 5
+            },
+
+             passos(){
+                    alert(this.posicao)
+                },
+
+
+
+
+
+            energia: 0,
+            comer(){
+                alert("Squirtle comeu!")
+                this.energia = this.energia + 1
+            },
+            verEnergia(){
+                alert("Energia: " + this.energia)
+            },    
+
+            ataque(){
+                alert("Squirtle lançou chicote de cauda!")
+                this.energia = this.energia - 3
+            },
+            energiaPerdida(){
+                alert(this.energia)
+            },
+
+            dormir(){
+                alert("Squirtle está dormindo!")
+                this.energia = this.energia + 3
+            },
+            acordou(){
+                alert(this.energia)
+            }
+
+
+
+
+        }
+        pokemon.passos()
+        pokemon.andar()
+        pokemon.passos()
+        pokemon.andar()
+        pokemon.passos()
+
+        pokemon.comer()
+        pokemon.verEnergia()
+        pokemon.comer()
+        pokemon.verEnergia()
+
+
+
+        pokemon.ataque()
+        pokemon.energiaPerdida()
+        pokemon.ataque()
+        pokemon.energiaPerdida()
+        
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
