@@ -46,7 +46,29 @@
             },
             verEnergia(){
                 alert("Energia: " + this.energia)
-            },    
+            },
+
+
+
+            verPeso(){
+                alert("Squirtle ficou pesado!" + this.peso)
+            },
+
+            Treinou(){
+                alert("Squirtle treinou!")
+                this.peso = this.peso + 0.5
+                this.nivel = this.nivel + 1
+            },
+
+            perdeuPeso(){
+                alert("Perdeu peso: " + this.peso)
+            },
+            
+            subiuNivel(){
+                alert("Squirtle subiu de nivel! " + nivel)
+            },
+
+    
 
             ataque(){
                 alert("Squirtle lançou chicote de cauda!")
@@ -75,6 +97,7 @@
         pokemon.passos()
 
         pokemon.comer()
+        pokemon.verPeso()
         pokemon.verEnergia()
         pokemon.comer()
         pokemon.verEnergia()
@@ -85,6 +108,8 @@
         pokemon.energiaPerdida()
         pokemon.ataque()
         pokemon.energiaPerdida()
+
+        
         
 
     </script>
